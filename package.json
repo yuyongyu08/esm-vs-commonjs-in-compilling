@@ -1,0 +1,24 @@
+{
+  "name": "esm-vs-commonjs-in-compilling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test1:require:exports": "node ./lib/1-require-module.exports.js",
+    "test2:require:export": "node ./lib/2-require-export.js",
+    "test3:import:exports": "node ./lib/3-import-module.exports.js",
+    "test4:import:export": "node ./lib/4-import-export.js"
+  },
+  "keywords": [],
+  "author": "yuyongyu <yuyongyu@163.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}
