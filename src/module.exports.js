@@ -1,4 +1,4 @@
-import chalk from "chalk";
+const chalk = require("chalk");
 const msg = "Hello CommonJS!";
 
 function printMsg() {

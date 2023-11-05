@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib",
-    "test1:require:exports": "node ./lib/1-require-module.exports.js",
-    "test2:require:export": "node ./lib/2-require-export.js",
-    "test3:import:exports": "node ./lib/3-import-module.exports.js",
-    "test4:import:export": "node ./lib/4-import-export.js"
+    "build": "rm -rf dist && babel src -d dist",
+    "test1:require:exports": "node ./dist/1-require-module.exports.js",
+    "test2:require:export": "node ./dist/2-require-export.js",
+    "test3:import:exports": "node ./dist/3-import-module.exports.js",
+    "test4:import:export": "node ./dist/4-import-export.js"
   },
   "keywords": [],
   "author": "yuyongyu <yuyongyu@163.com>",
